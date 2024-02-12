@@ -1,13 +1,43 @@
 .container{
   height: 100px;
+  margin-top: 54px;
+  margin-left: 45px;
+  margin-right: 52px;
+  font-size: 18px;
+  letter-spacing : 3.6px;
+  font-family: "Brandon Medium";
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 54px;
-  margin-left: 45px;
+  flex-direction: row;
 }
 
-.logo{
-  font-size: 30px;
-  font-weight: bold;
+.container .col_3 {
+  display: flex;
+  gap: 30px;
+  align-items: center;
 }
+
+.logos {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.logo a:hover {
+  filter: contrast(2);
+  transition: filter 0.5s ease;
+}
+
+.delivery_btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  transition-duration: 0.5s
+}
+
+.delivery_btn:hover {
+  filter: contrast(1.5);
+}
+

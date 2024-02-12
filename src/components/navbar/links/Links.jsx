@@ -7,23 +7,23 @@ export default function Links() {
   const links =  [
     {
       title: "CREPES EN CASA",
-      path: "/"
+      path: "https://domicilios.crepesywaffles.com/catalogo/crepes-en-casa/"
     },
     {
       title: "BONOS",
-      path: "/about"
+      path: "https://crepesywaffles.com/bonos"
     },
     {
       title: "UBICACIONES",
-      path: "/"
+      path: "https://domicilios.crepesywaffles.com/ubicaciones/"
     },
     {
       title: "CARRETINO",
-      path: "/"
+      path: "https://domicilios.crepesywaffles.com/carretino/"
     },
     {
       title: "CONTACTO",
-      path: "/"
+      path: "https://domicilios.crepesywaffles.com/contacto/"
     }
   ]
 

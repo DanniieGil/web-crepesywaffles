@@ -1,5 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
+import styles from "./socialmedia.module.css"
 
 export default function SocialMedia(){
 
@@ -28,12 +29,12 @@ export default function SocialMedia(){
 
 
   return (
-    <div>
+    <div className={styles.container}>
       {
         links.map(
           link=>(
-            <Link href={link.path} key={link.name} target="_blank">
-              <Image src={link.image} width={78} height={71}/>
+            <Link href={link.path} key={link.name} target="_blank" >
+              <Image src={link.image} width={78} height={71} className={styles.item}/>
             </Link>
           )
         )

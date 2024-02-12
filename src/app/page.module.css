@@ -1,8 +1,83 @@
-.container{}
+.container h1 {
+  font-size : 410px;
+  letter-spacing : -8.2px;
+  font-family: "Nitti Grotesk Bold"
+}
 
-.section_one{}
-.section_two{}
-.section_three{}
-.section_four{}
-.section_five{}
-.section_six{}
+.container h2 {
+  font-size : 120px;
+  letter-spacing : 21.6px;
+  font-family: "Nitti Grotesk Bold";
+}
+
+.container h3 {
+  font-size : 52px;
+  letter-spacing : 9.36px;
+  font-family: "Nitti Grotesk SemiLight"
+}
+
+.container h4 {
+  font-size : 37px;
+  line-height : 68.4px;
+  letter-spacing : -0.74px;
+  font-family: "Nitti Grotesk SemiLight"
+}
+
+.container .h4_simple {
+  font-size : 37px;
+  font-family: "Nitti Grotesk SemiLight"
+}
+
+.container .show_more_btn {
+  font-family: "Brandon Bold";
+  font-size : 22px;
+  line-height : 28.63px;
+  color : #7F5540;
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #7F5540;
+  letter-spacing : 3.6px;
+  width: 178px;
+  height: 51px;
+}
+
+.section_one {
+  height: 876px;
+}
+
+.section_two {
+  height: 960px;
+  background: url("/assets/bg_1.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section_two h4 {
+  max-width: 1680px;
+}
+
+.section_three {
+  height: 722px;
+}
+
+.section_four {
+  height: 722px;
+}
+
+.section_five {
+  height: 1150px;
+  background: url("/assets/bg_2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.section_six {
+  height: 722px;
+}
+
+.section_seven {
+  height: 722px;
+}

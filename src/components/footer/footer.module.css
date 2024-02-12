@@ -1,3 +1,39 @@
 .container {
-  background-color: #7F6046
+  background-color: #7F6046;
+  color : #DBC7BA;
+}
+
+.container hr{
+  border-bottom: 0px solid #FFF2E7;
+  margin-left:30px;
+  margin-right:30px;
+}
+
+.container .row_1 {
+  padding: 120px 120px 65px 120px;
+  display: flex;
+  justify-content: space-between;
+  font-size : 24px;
+  line-height : 52.93px;
+  letter-spacing : 5.76px;
+}
+
+.container .row_2 {
+  padding: 55px 90px 60px 90px;
+  font-size: 23px;
+}
+
+.container .row_2 .text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .row_2 .text .col_1 {
+  gap: 50px;
+  display: flex;
+}
+
+.container .row_2 .text .col_1 a:hover {
+  filter: contrast(2);
+  transition: filter 0.3s ease;
 }

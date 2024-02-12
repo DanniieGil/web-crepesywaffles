@@ -20,11 +20,11 @@
   src: url("/fonts/Brandon_reg.otf") format('opentype');
 }
 @font-face {
-  font-family: "NittiGrotesk Bold";
+  font-family: "Nitti Grotesk Bold";
   src: url("/fonts/NittiGrotesk-Bold.otf") format('opentype');
 }
 @font-face {
-  font-family: "NittiGrotest Semilight";
+  font-family: "Nitti Grotesk SemiLight";
   src: url("/fonts/NittiGrotesk-SemiLight.otf") format('opentype');
 }
 

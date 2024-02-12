@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.container .item:hover {
+  filter: contrast(2);
+  transition: filter 0.5s ease;
+}

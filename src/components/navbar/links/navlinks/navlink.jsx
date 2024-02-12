@@ -10,7 +10,7 @@ export default function NavLink({ item }) {
   return (
     <Link 
       href={item.path}
-      className={`${styles.container} ${
+      className={`${styles.item} ${
         pathName === item.title && styles.active
       }`}
     >

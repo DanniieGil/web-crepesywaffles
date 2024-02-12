@@ -1,5 +1,11 @@
 .links{
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 38px;
+}
+
+@media only screen and (max-width: 1840px) {
+  .links{
+    display: none;
+  }
 }
