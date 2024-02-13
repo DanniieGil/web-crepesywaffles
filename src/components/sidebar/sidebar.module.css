@@ -67,3 +67,9 @@
   font-size: 18px;
   font-family: "Brandon bold";
 }
+
+.sidebar_delivery_btn:hover{
+  color: white;
+  background-color: #7F6046;
+  filter: contrast(1);
+}

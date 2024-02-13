@@ -1,8 +1,9 @@
 .container{
   height: 100px;
-  margin-top: 54px;
-  margin-left: 45px;
-  margin-right: 52px;
+  padding-top: 54px;
+  padding-left: 45px;
+  padding-right: 52px;
+  padding-bottom: 54px;
   font-size: 18px;
   letter-spacing : 3.6px;
   font-family: "Brandon Medium";
@@ -10,6 +11,20 @@
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
+  position: sticky;
+  top: 0;
+  z-index: 800;
+  transition: 0.5s ease;
+}
+
+.container img {
+  fill: #79533 !important;
+
+}
+.scrolled {
+  background-color: white;
+  margin: 0;
+  color: #79533F;
 }
 
 .container .col_3 {
@@ -45,10 +60,11 @@
   padding: 10px 20px;
   border: 2px solid #ccc;
   border-radius: 5px;
-  transition-duration: 0.5s
+  transition: 0.5s ease;
 }
 
 .delivery_btn:hover {
-  filter: contrast(1.5);
+  background-color: white;
+  color: black;
 }
 
