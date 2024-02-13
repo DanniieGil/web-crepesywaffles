@@ -32,6 +32,8 @@ body {
   background-color: var(--bg);
   color: var(--text);
   font-family: "Brandon Regular";
+  display: grid;
+  grid-template-columns: 0fr 1fr;
 }
 
 * {
@@ -43,4 +45,9 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.no-scroll{
+  height: 100vh;
+  overflow: hidden;
 }

@@ -18,6 +18,17 @@
   align-items: center;
 }
 
+.container button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.container button:hover {
+  transition-duration: 0.5s;
+  transform: scale(1.1);
+}
+
 .logos {
   display: flex;
   gap: 40px;

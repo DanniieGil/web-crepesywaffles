@@ -1,15 +1,21 @@
+"use client"
 import Link from "next/link"
 import Links from "./links/Links"
 import Image from "next/image"
 import styles from "./navbar.module.css"
-
+import { useContext } from "react"
+import {SidebarContext} from "@/context/SidebarContext";
+ 
 export default function Navbar() {
+
+  const { toggleSidebarcollapse } = useContext(SidebarContext);
+
   return (
     <div className={styles.container}>
       <div className={styles.logos}>
-        <Link href="/">
+        <button onClick={toggleSidebarcollapse} >
           <Image src="assets/hamburger.svg" width={40} height={21}/>
-        </Link>
+        </button>
         <Link href="/">
           <Image src="assets/logo.svg" width={422} height={36}/>
         </Link>

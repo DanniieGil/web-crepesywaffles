@@ -46,7 +46,7 @@ export default function Links() {
       {
         links.map(
           link =>(
-            <div>
+            <div key={link.title}>
               <Link href={link.path} className={styles.item}>{link.title}</Link> 
             </div>
           )
