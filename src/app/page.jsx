@@ -28,13 +28,11 @@ export default function Home() {
       <div className={styles.section_two}>
         <h4>
           En Crepes & Waffles sabemos que la mesa y el comer son actos de amor,
-          que involucran todos los sentidos, <br />
-          por eso, ponemos gran empeño en el servicio y mucha atención en la
-          selección del mobiliario y de las luces,
-          <br />
-          para generar lugares con ambiente, donde los alimentos, con sus
-          formas, sus texturas, sus colores, sus aromas <br />y sabores,
-          complazcan todos los deseos.
+          que involucran todos los sentidos, por eso, ponemos gran empeño en el
+          servicio y mucha atención en la selección del mobiliario y de las
+          luces, para generar lugares con ambiente, donde los alimentos, con sus
+          formas, sus texturas, sus colores, sus aromas y sabores, complazcan
+          todos los deseos.
         </h4>
       </div>
       <div className={styles.section_three}>
@@ -46,7 +44,13 @@ export default function Home() {
           </Link>
         </div>
         <div className={styles.col_2}>
-          <Image src="/assets/img_1.jpg" width={513} height={482} />
+          <Image
+            src="/assets/img_1.jpg"
+            width={513}
+            height={482}
+            className={styles.image_desktop}
+          />
+          <div className={styles.image_mobile} />
         </div>
       </div>
       <div className={styles.section_four}>
@@ -58,15 +62,16 @@ export default function Home() {
           </Link>
         </div>
         <div className={styles.col_2}>
-          <Image src="/assets/img_1.jpg" width={513} height={482} />
+          <Image
+            src="/assets/img_1.jpg"
+            width={513}
+            height={482}
+            className={styles.image_desktop}
+          />
+          <div className={styles.image_mobile} />
         </div>
       </div>
       <div className={styles.section_five}>
-        {/* <div className={styles.request_here_btn}>
-          <Link href="https://domicilios.crepesywaffles.com/">
-            <Image src="/assets/pide_aqui_1.svg" width={78} height={285}/>
-          </Link>
-        </div> */}
         <h2>COEXISTO</h2>
         <h3>LO QUE HACEMOS</h3>
         <Link href="/" className={styles.show_more_btn}>
@@ -82,7 +87,13 @@ export default function Home() {
           </Link>
         </div>
         <div className={styles.col_2}>
-          <Image src="/assets/img_1.jpg" width={513} height={482} />
+          <Image
+            src="/assets/img_1.jpg"
+            width={513}
+            height={482}
+            className={styles.image_desktop}
+          />
+          <div className={styles.image_mobile} />
         </div>
       </div>
       <div className={styles.section_seven}>
@@ -94,7 +105,13 @@ export default function Home() {
           </Link>
         </div>
         <div className={styles.col_2}>
-          <Image src="/assets/img_1.jpg" width={513} height={482} />
+          <Image
+            src="/assets/img_1.jpg"
+            width={513}
+            height={482}
+            className={styles.image_desktop}
+          />
+          <div className={styles.image_mobile} />
         </div>
       </div>
     </div>

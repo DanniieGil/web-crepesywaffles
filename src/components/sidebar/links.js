@@ -19,7 +19,7 @@ export const links_1 = [
     title: "CARRETINO",
     path: "https://domicilios.crepesywaffles.com/carretino/"
   }
-];  
+];
 
 export const links_2 = [
   {
