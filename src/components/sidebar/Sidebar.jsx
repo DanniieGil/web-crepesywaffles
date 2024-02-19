@@ -12,10 +12,10 @@ export default function Sidebar() {
     <div className={`${styles.sidebar_wrapper} ${isCollapsed ? styles.collapsed : ""}`}>
       <div className={styles.sidebar_top}>
         <button className={styles.sidebar_close_btn} onClick={toggleSidebarcollapse}>
-          <Image src="/assets/cross.svg" width={25} height={25}/>
+          <Image src="/assets/cross.svg" width={16} height={16}/>
         </button>
         <Link 
-          href="https://domicilios.crepesywaffles.com/domicilio/ingresar-direccion/"
+          href="https://domicilios.crepesywaffles.com/"
           className={styles.sidebar_delivery_btn}>
           DOMICILIO
         </Link>

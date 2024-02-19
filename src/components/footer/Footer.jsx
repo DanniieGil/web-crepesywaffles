@@ -9,7 +9,7 @@ export default function Footer() {
     <div className={styles.container}>
       <div className={styles.row_1}>
         <Links/>
-        <Image src="/assets/empresas_b_logo.svg" width={114} height={188}/>
+        <Image src="/assets/empresas_b_logo.svg" width={76} height={125}/>
       </div>
       <hr/>
       <div className={styles.row_2}>

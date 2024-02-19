@@ -34,7 +34,7 @@ export default function SocialMedia(){
         links.map(
           link=>(
             <Link href={link.path} key={link.name} target="_blank" >
-              <Image src={link.image} width={78} height={71} className={styles.item}/>
+              <Image src={link.image} width={53} height={48} className={styles.item}/>
             </Link>
           )
         )

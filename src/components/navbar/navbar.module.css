@@ -4,7 +4,7 @@
   padding-left: 45px;
   padding-right: 52px;
   padding-bottom: 54px;
-  font-size: 18px;
+  font-size: 13px;
   letter-spacing : 3.6px;
   font-family: "Brandon Medium";
   display: flex;
@@ -13,18 +13,28 @@
   flex-direction: row;
   position: sticky;
   top: 0;
-  z-index: 800;
+  z-index: 900;
   transition: 0.5s ease;
 }
 
 .container img {
-  fill: #79533 !important;
+  fill: #79533F !important;
 
 }
 .scrolled {
   background-color: white;
   margin: 0;
   color: #79533F;
+}
+
+@media only screen and (max-width: 800px) {
+  .links {
+    display: none;
+  }
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 .container .col_3 {
@@ -50,17 +60,39 @@
   align-items: center;
 }
 
+@media only screen and (max-width: 800px) {
+  .logos{
+    gap: 10px;
+  }
+
+  .logos a img{
+    width: 104px;
+    height: 8px;
+    transition: 0.5s ease;
+  }
+  .logos button img{
+    width: 13px;
+    height: 7px;
+    transition: 0.5s ease;
+  }
+}
+
 .logo a:hover {
   filter: contrast(2);
   transition: filter 0.5s ease;
 }
 
+.login_btn:hover {
+  transition-duration: 0.5s;
+  filter: contrast(0.3);
+}
+
 .delivery_btn {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 7px 15px;
   border: 2px solid #ccc;
-  border-radius: 5px;
-  transition: 0.5s ease;
+  border-radius: 8px;
+  text-shadow: 1px 0px white;
 }
 
 .delivery_btn:hover {
@@ -68,3 +100,14 @@
   color: black;
 }
 
+.delivery_btn_scrolled {
+  color: #79533F;
+  text-shadow: 1px 0px #79533F;
+  border: 2px solid #79533F;
+}
+
+.delivery_btn_scrolled:hover {
+  background-color: #79533F;
+  color: white;
+  transition: 0.5s ease;
+}

@@ -1,9 +1,9 @@
 .sidebar_wrapper {
-  transition: all 0.3s ease;
-  width: 435px;
+  transition: all 0.4s ease-in-out;
+  width: 335px;
   background-color: #fff;
   font-family: "Brandon Medium";
-  padding-top: 54px;
+  padding-top: 10px;
 }
 
 .sidebar_wrapper hr {
@@ -14,27 +14,29 @@
 .sidebar {
   height: 100%;
   background-color: #fff;
+  position: fixed;
   padding: 1rem;
+  margin-top: 60px;
+
 }
 
 .sidebar_top {
   padding: 20px 30px 0px 40px;
-  display: flex;
-  justify-content: space-between;
+  position: fixed;
 }
 
 .sidebar_link {
   display: inline-block;
-  font-size: 1rem;
   text-decoration: none;
   color: #000;
   display: flex;
-  font-size: 20px;
-  height: 46px;
+  font-size: 13px;
+  height: 32px;
   margin-bottom: 7px;
   align-items: center;
   padding-left: 20px;
   letter-spacing: 2px;
+  color: #7F6046;
 }
 
 .sidebar_link:hover {
@@ -64,8 +66,10 @@
   transition-duration: 0.5s;
   border: 1px solid #7F5540;
   color: red;color: #7F5540;
-  font-size: 18px;
+  font-size: 11px;
   font-family: "Brandon bold";
+  left: 9rem;
+  position: relative;
 }
 
 .sidebar_delivery_btn:hover{
