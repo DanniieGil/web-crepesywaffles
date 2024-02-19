@@ -6,6 +6,26 @@
   padding-top: 10px;
 }
 
+@media only screen and (max-width: 800px) {
+  .sidebar_wrapper{
+    width: 160px;
+    z-index: 900;
+  }
+
+  .sidebar_wrapper span {
+    font-size: 8px;
+  }
+
+  .sidebar_wrapper a {
+    font-size: 8px;
+  }
+
+  .sidebar {
+    width: 160px;
+
+  }
+}
+
 .sidebar_wrapper hr {
   margin-bottom: 20px;
   margin-top:20px;
@@ -24,6 +44,15 @@
   padding: 20px 30px 0px 40px;
   position: fixed;
 }
+
+@media only screen and (max-width: 800px) {
+  .sidebar_top {
+    padding: 10px 15px 0px 20px;
+    position: fixed;
+  }
+
+}
+
 
 .sidebar_link {
   display: inline-block;
