@@ -50,14 +50,14 @@ export default function Navbar() {
       <div className={`${styles.links} ${!isCollapsed ? styles.hidden : ""}`}>
         <Links />
       </div>
-      <div className={styles.col_3}>
-        <Link href="https://domicilios.crepesywaffles.com/ingresar/?next=/ingresar/" className={styles.login_btn}>
-          INGRESAR
-        </Link>
-        <Link href="https://domicilios.crepesywaffles.com/" className={`${styles.delivery_btn} ${containerStyle ? styles.delivery_btn_scrolled : ""}`}>
-          DOMICILIO
-        </Link>
-      </div>
+      {/* <div className={styles.col_3}> */}
+      {/*   <Link href="https://domicilios.crepesywaffles.com/ingresar/?next=/ingresar/" className={styles.login_btn}> */}
+      {/*     INGRESAR */}
+      {/*   </Link> */}
+      {/*   <Link href="https://domicilios.crepesywaffles.com/" className={`${styles.delivery_btn} ${containerStyle ? styles.delivery_btn_scrolled : ""}`}> */}
+      {/*     DOMICILIO */}
+      {/*   </Link> */}
+      {/* </div> */}
     </div>
   )
 }

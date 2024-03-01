@@ -4,6 +4,18 @@
   background-color: #fff;
   font-family: "Brandon Medium";
   padding-top: 10px;
+  animation: ShowSidebar 1.5s ease-in-out;
+}
+
+@keyframes ShowSidebar {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -77,9 +89,9 @@
 .collapsed {
   overflow: hidden;
   opacity: 0;
-  transform: translateX(-100%);
   width: 0px !important;
 }
+
 
 .sidebar_close_btn {
   background: none;

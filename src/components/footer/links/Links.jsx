@@ -8,27 +8,7 @@ export default function Links() {
       path: "/"
     },
     {
-      title: "CREPES EN CASA",
-      path: "/"
-    },
-    {
-      title: "BONOS DE REGALO",
-      path: "/"
-    },
-    {
-      title: "UBICACIONES",
-      path: "/"
-    },
-    {
-      title: "CARRETINO",
-      path: "/"
-    },
-    {
-      title: "CONTACTO",
-      path: "/"
-    },
-    {
-      title: "COMUNIDAD",
+      title: "FACTURA ELECTRÓNICA",
       path: "/"
     },
     {
@@ -36,7 +16,7 @@ export default function Links() {
       path: "/"
     },
     {
-      title: "FACTURA ELECTRÓNICA",
+      title: "CONTACTO",
       path: "/"
     }
   ]

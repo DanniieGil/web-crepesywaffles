@@ -1,0 +1,114 @@
+.container {
+  position: fixed;
+  top: 40vh;
+  right: 0px;
+  z-index: 900;
+  display: none;
+}
+
+.request_here_btn {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+  .request_here_btn{
+    top: 15vh;
+  }
+
+  .request_here_btn img{
+    top: 15vh;
+    width: 24px;
+    height: 97px;
+  }
+}
+
+.request_here_btn:hover {
+  transform: scale(1.05)
+}
+
+.scrolled {
+  display: flex;
+  flex-direction: row-reverse;
+  gap:10px;
+  transition: 0.5s ease;
+  animation: UpAndDown 2s ease-in-out, OpacityChange 0.7s ease-in-out;
+}
+
+@keyframes UpAndDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes OpacityChange {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.item_circle {
+  background: white;
+  border-radius: 50%;
+  text-align: center;
+  margin: auto;
+  transition: 0.5s ease;
+  margin-bottom: 5px;
+  transition: 0.7s ease;
+}
+
+.item_container:hover {
+  transition: 0.4s ease;
+  cursor: pointer;
+  transform: scale(1.05)
+}
+
+.item_container .item_circle:hover{
+  background-color: #f7e9de;
+}
+
+.hiddenButtons_container{
+  opacity: 0;
+  align-self: center;
+  animation: HiddenButtonsContainer 0.3s ease-in-out;
+  text-align: center;
+
+}
+
+.showButtons_container {
+  align-self: center;
+  animation: ShowButtonsContainer 0.5s ease-in-out;
+  text-align: center;
+}
+
+@keyframes ShowButtonsContainer {
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes HiddenButtonsContainer {
+  from{
+    opacity: 1;
+    transform: translateX(0px);
+
+  }
+  to {
+    opacity: 0;
+    transform: translateX(50px);
+
+  }
+}

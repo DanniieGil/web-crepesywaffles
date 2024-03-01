@@ -45,13 +45,13 @@ export default function Sidebar() {
               </li>
             ))
           }
-          <hr />
-          <li className={styles.sidebar_item}>
-            <Link className={styles.sidebar_link} href="https://domicilios.crepesywaffles.com/ingresar/">INGRESAR</Link>
-          </li>
-          <li className={styles.sidebar_item}>
-            <Link className={styles.sidebar_link} href="https://domicilios.crepesywaffles.com/registro/">REGISTRARSE</Link>
-          </li>
+          {/* <hr /> */}
+          {/* <li className={styles.sidebar_item}> */}
+          {/*   <Link className={styles.sidebar_link} href="https://domicilios.crepesywaffles.com/ingresar/">INGRESAR</Link> */}
+          {/* </li> */}
+          {/* <li className={styles.sidebar_item}> */}
+          {/*   <Link className={styles.sidebar_link} href="https://domicilios.crepesywaffles.com/registro/">REGISTRARSE</Link> */}
+          {/* </li> */}
         </ul>
       </aside>
     </div>

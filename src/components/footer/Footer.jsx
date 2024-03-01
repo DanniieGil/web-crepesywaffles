@@ -11,7 +11,7 @@ export default function Footer() {
         <Links/>
         <Image src="/assets/empresas_b_logo.svg" width={76} height={125}/>
       </div>
-      <hr/>
+      <div className={styles.line_empty}></div>
       <div className={styles.row_2}>
         <SocialMedia/>
         <div className={styles.text}>
