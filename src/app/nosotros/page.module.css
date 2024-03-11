@@ -167,11 +167,11 @@
 }
 
 .section_two .line_4 {
-  animation-range: entry 25% cover 30%;
+  animation-range: entry 25% cover 10%;
 }
 
 .section_two .line_5 {
-  animation-range: entry 25% cover 15%;
+  animation-range: entry 50% cover 19%;
 }
 
 /* ANIMATIONS */

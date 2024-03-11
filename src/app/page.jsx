@@ -32,11 +32,11 @@ export default function Home() {
           <h2>NOSOTROS</h2>
           <h3>¿QUÉ HACEMOS?</h3>
           <h5>
-            Transformamos alimento en Arte, con la idea de llegar al corazón 
-            y quedarnos en la mente, nos reinventamos todo el tiempo 
-            con la creación de nuevos platos y la mezcla de diferentes 
-            ingredientes que juntos forman una sinfonía capaz de cautivar 
-            los paladares más conocedores y los apetitos más ambiciosos.  
+            Transformamos alimento en Arte, con la idea de llegar al corazón y
+            quedarnos en la mente, nos reinventamos todo el tiempo con la
+            creación de nuevos platos y la mezcla de diferentes ingredientes que
+            juntos forman una sinfonía capaz de cautivar los paladares más
+            conocedores y los apetitos más ambiciosos.
           </h5>
           <Link href="/nosotros" className={styles.show_more_btn}>
             VER MÁS
@@ -44,7 +44,7 @@ export default function Home() {
         </div>
         <div className={styles.col_2}>
           <Image
-            src="/assets/img_1_2.jpg"
+            src="/assets/img_1_desktop.jpg"
             width={1112}
             height={1478}
             className={styles.image_desktop}
@@ -68,7 +68,7 @@ export default function Home() {
         </div>
         <div className={styles.col_2}>
           <Image
-            src="/assets/img_1_2.jpg"
+            src="/assets/img_2_desktop.jpg"
             width={1112}
             height={1478}
             className={styles.image_desktop}
@@ -95,11 +95,9 @@ export default function Home() {
           <h2>NUESTRAS MARCAS</h2>
           <h3>TEXTO PENDIENTE</h3>
           <h5>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing velit esse
-            molestie consequat, vel illum dolore eu feugiat nulla facilisis at
-            vero eros et accumsan et iusto odio dignissim qui blandit praesent
-            luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-            Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit.
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+            volut
           </h5>
           <Link href="/" className={styles.show_more_btn}>
             VER MÁS
@@ -107,7 +105,7 @@ export default function Home() {
         </div>
         <div className={styles.col_2}>
           <Image
-            src="/assets/img_1_2.jpg"
+            src="/assets/img_1_desktop.jpg"
             width={1112}
             height={1478}
             className={styles.image_desktop}
@@ -120,11 +118,9 @@ export default function Home() {
           <h2>EXPANSIÓN</h2>
           <h3>NOSOTROS EN EL MUNDO</h3>
           <h5>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing velit esse
-            molestie consequat, vel illum dolore eu feugiat nulla facilisis at
-            vero eros et accumsan et iusto odio dignissim qui blandit praesent
-            luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
-            Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit.
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+            volut
           </h5>
           <Link href="/" className={styles.show_more_btn}>
             VER MÁS
@@ -132,7 +128,7 @@ export default function Home() {
         </div>
         <div className={styles.col_2}>
           <Image
-            src="/assets/img_1_2.jpg"
+            src="/assets/img_3_desktop.jpg"
             width={1112}
             height={1478}
             className={styles.image_desktop}

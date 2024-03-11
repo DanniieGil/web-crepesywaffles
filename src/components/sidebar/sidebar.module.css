@@ -62,9 +62,7 @@
     padding: 10px 15px 0px 20px;
     position: fixed;
   }
-
 }
-
 
 .sidebar_link {
   display: inline-block;
@@ -78,6 +76,13 @@
   padding-left: 20px;
   letter-spacing: 2px;
   color: #7F6046;
+}
+
+@media only screen and (max-width: 800px) {
+  .sidebar_link {
+    height: 20px;
+    margin-bottom: 0px;
+  }
 }
 
 .sidebar_link:hover {
@@ -115,11 +120,19 @@
   line-height: 30px;
   letter-spacing: 1.2px;
   padding: 0 10px;
+  top: -4px;
 }
 
 .sidebar_delivery_btn:hover{
   color: #7F5540;
-  /* background-color: #D2C1AE; */
   border-color:rgb(240 180 78);
   background-color: rgb(240 180 78);
+}
+
+@media only screen and (max-width: 800px){
+  .sidebar_delivery_btn {
+    height: 25px;
+    left: 2rem;
+    line-height: 24px;
+  }
 }

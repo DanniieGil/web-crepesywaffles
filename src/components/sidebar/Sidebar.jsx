@@ -14,7 +14,7 @@ export default function Sidebar() {
         <button className={styles.sidebar_close_btn} onClick={toggleSidebarcollapse}>
           <Image src="/assets/cross.svg" width={16} height={16}/>
         </button>
-        <Link 
+        <Link
           href="https://domicilios.crepesywaffles.com/"
           className={styles.sidebar_delivery_btn}>
           DOMICILIO
@@ -45,13 +45,6 @@ export default function Sidebar() {
               </li>
             ))
           }
-          {/* <hr /> */}
-          {/* <li className={styles.sidebar_item}> */}
-          {/*   <Link className={styles.sidebar_link} href="https://domicilios.crepesywaffles.com/ingresar/">INGRESAR</Link> */}
-          {/* </li> */}
-          {/* <li className={styles.sidebar_item}> */}
-          {/*   <Link className={styles.sidebar_link} href="https://domicilios.crepesywaffles.com/registro/">REGISTRARSE</Link> */}
-          {/* </li> */}
         </ul>
       </aside>
     </div>
