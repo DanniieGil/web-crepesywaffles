@@ -35,6 +35,12 @@
   color: #79533F;
 }
 
+.scrolled a:hover{
+  color: #79533F;
+  filter: contrast(300%);
+  transition: 0.2s ease;
+}
+
 .links {
   margin-left: auto;
   margin-right: auto;

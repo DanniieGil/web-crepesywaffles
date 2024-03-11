@@ -1,13 +1,17 @@
 .container {
   position: fixed;
-  top: 40vh;
-  right: 0px;
+  bottom: 1.5rem;
+  right: 1.5rem;
   z-index: 900;
   display: none;
 }
 
 .request_here_btn {
   cursor: pointer;
+  transition: 0.5s ease-in-out;
+  border-radius: 50%;
+  background-color: rgb(240 180 78);
+  height: 100%;
 }
 
 @media only screen and (max-width: 800px) {
@@ -23,12 +27,14 @@
 }
 
 .request_here_btn:hover {
-  transform: scale(1.05)
+  transform: scale(1.05);
+  background-color: rgb(175 122 32);
 }
 
 .scrolled {
   display: flex;
-  flex-direction: row-reverse;
+  height: 80px;
+  flex-direction: column-reverse;
   gap:10px;
   transition: 0.5s ease;
   animation: UpAndDown 2s ease-in-out, OpacityChange 0.7s ease-in-out;
@@ -68,11 +74,11 @@
 .item_container:hover {
   transition: 0.4s ease;
   cursor: pointer;
-  transform: scale(1.05)
+  /* transform: scale(1.05); */
 }
 
 .item_container .item_circle:hover{
-  background-color: #f7e9de;
+  background-color: rgb(240 180 78);
 }
 
 .hiddenButtons_container{
@@ -92,23 +98,23 @@
 @keyframes ShowButtonsContainer {
   from{
     opacity: 0;
-    transform: translateX(50px);
+    transform: translateY(50px);
   }
   to {
     opacity: 1;
-    transform: translateX(0px);
+    transform: translateY(0px);
   }
 }
 
 @keyframes HiddenButtonsContainer {
   from{
     opacity: 1;
-    transform: translateX(0px);
+    transform: translateY(0px);
 
   }
   to {
     opacity: 0;
-    transform: translateX(50px);
+    transform: translateY(50px);
 
   }
 }

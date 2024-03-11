@@ -34,6 +34,7 @@ export default function Links() {
           link=>(
             <NavLink item={link} key={link.title}/>
           )
+
         )
       }
     </div>

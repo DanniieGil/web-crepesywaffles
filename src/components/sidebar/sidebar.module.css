@@ -92,7 +92,6 @@
   width: 0px !important;
 }
 
-
 .sidebar_close_btn {
   background: none;
   border: none;
@@ -100,21 +99,27 @@
 }
 
 .sidebar_delivery_btn {
+  height: 30px;
   display: inline-block;
-  padding: 10px 20px;
   border: 2px solid #ccc;
   border-radius: 5px;
-  transition-duration: 0.5s;
+  transition: 0.5s ease-in-out;
   border: 1px solid #7F5540;
-  color: red;color: #7F5540;
-  font-size: 11px;
+  color: white;
+  background-color: #79533F;
+  font-size: 13px;
   font-family: "Brandon bold";
   left: 9rem;
   position: relative;
+  text-align: center;
+  line-height: 30px;
+  letter-spacing: 1.2px;
+  padding: 0 10px;
 }
 
 .sidebar_delivery_btn:hover{
-  color: white;
-  background-color: #7F6046;
-  filter: contrast(1);
+  color: #7F5540;
+  /* background-color: #D2C1AE; */
+  border-color:rgb(240 180 78);
+  background-color: rgb(240 180 78);
 }

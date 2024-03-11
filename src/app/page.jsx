@@ -13,6 +13,10 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <div className={styles.section_one}>
+        <video className={styles.video_bg} autoPlay muted loop>
+          <source src="/assets/home_video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <h1>Hola</h1>
         <h4 className={styles.h4_simple}>
           Somos Crepes & Waffles y estamos
@@ -28,13 +32,13 @@ export default function Home() {
           <h2>NOSOTROS</h2>
           <h3>¿QUÉ HACEMOS?</h3>
           <h5>
-            Transformamos alimento en Arte, con la idea de llegar al corazón y
-            quedarnos en la mente, nos reinventamos todo el tiempo con la
-            creación de nuevos platos y la mezcla de diferentes ingredientes que
-            juntos forman una sinfonía capaz de cautivara los paladares más
-            conocedores y los apetitos más ambiciosos.
+            Transformamos alimento en Arte, con la idea de llegar al corazón 
+            y quedarnos en la mente, nos reinventamos todo el tiempo 
+            con la creación de nuevos platos y la mezcla de diferentes 
+            ingredientes que juntos forman una sinfonía capaz de cautivar 
+            los paladares más conocedores y los apetitos más ambiciosos.  
           </h5>
-          <Link href="/" className={styles.show_more_btn}>
+          <Link href="/nosotros" className={styles.show_more_btn}>
             VER MÁS
           </Link>
         </div>
@@ -73,7 +77,7 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.section_five}>
-        <h2>COEXISTO</h2>
+        <h2>IMPACTO</h2>
         <h3>EJEMPLOS DE CAMBIO</h3>
         <h5 className={styles.h5_simple}>
           Estamos movidos por el deseo de actuar y de inspirar a otros a
@@ -88,8 +92,8 @@ export default function Home() {
       </div>
       <div className={styles.section_six}>
         <div className={styles.col_1}>
-          <h2>EXPANSIÓN</h2>
-          <h3>NOSOTROS EN EL MUNDO</h3>
+          <h2>NUESTRAS MARCAS</h2>
+          <h3>TEXTO PENDIENTE</h3>
           <h5>
             Lorem ipsum dolor sit amet, consectetuer adipiscing velit esse
             molestie consequat, vel illum dolore eu feugiat nulla facilisis at
@@ -113,9 +117,15 @@ export default function Home() {
       </div>
       <div className={styles.section_seven}>
         <div className={styles.col_1}>
-          <h2>BONOS</h2>
-          <h3>REGALOS</h3>
-          <h5>Comparte amor, comparte sonrisas.</h5>
+          <h2>EXPANSIÓN</h2>
+          <h3>NOSOTROS EN EL MUNDO</h3>
+          <h5>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing velit esse
+            molestie consequat, vel illum dolore eu feugiat nulla facilisis at
+            vero eros et accumsan et iusto odio dignissim qui blandit praesent
+            luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+            Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit.
+          </h5>
           <Link href="/" className={styles.show_more_btn}>
             VER MÁS
           </Link>

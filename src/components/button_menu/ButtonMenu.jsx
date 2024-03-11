@@ -46,9 +46,9 @@ export default function ButtonMenu() {
     <div className={`${styles.container} ${containerStyle}`}>
       <div className={styles.request_here_btn}>
         <Image
-          src="/assets/pide_aqui_3.svg"
-          width={60}
-          height={217}
+          src="/assets/pedir_aqui_6.svg"
+          width={80}
+          height={80}
           onClick={handleButtonClick}
         />
       </div>
