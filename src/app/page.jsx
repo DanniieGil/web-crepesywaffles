@@ -26,7 +26,7 @@ export default function Home() {
           saludablemente complaciendo.
         </h4>
       </div>
-      <ButtonMenu />
+      {/* <ButtonMenu /> */}
       <div className={styles.section_three}>
         <div className={styles.col_1}>
           <h2>NOSOTROS</h2>
@@ -68,7 +68,7 @@ export default function Home() {
         </div>
         <div className={styles.col_2}>
           <Image
-            src="/assets/img_2_desktop.jpg"
+            src="/assets/img_1_desktop.jpg"
             width={1112}
             height={1478}
             className={styles.image_desktop}
@@ -128,7 +128,7 @@ export default function Home() {
         </div>
         <div className={styles.col_2}>
           <Image
-            src="/assets/img_3_desktop.jpg"
+            src="/assets/img_1_desktop.jpg"
             width={1112}
             height={1478}
             className={styles.image_desktop}
