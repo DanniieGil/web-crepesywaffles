@@ -1,4 +1,3 @@
-
 import Link from "next/link";
 import Links from "./links/Links";
 import Image from "next/image";
@@ -15,49 +14,54 @@ export default function Navbar() {
     setIsClient(true);
 
     const handleScroll = () => {
-      const isScrolled = window.scrollY >= 50;
+      const isScrolled = window.scrollY >= 5;
       setScrolled(isScrolled);
     };
 
     const checkInitialScrollPosition = () => {
-      const isScrolled = window.scrollY >= 50;
+      const isScrolled = window.scrollY >= 5;
       setScrolled(isScrolled);
     };
 
-    if (typeof window !== 'undefined') {
+    if (typeof window !== "undefined") {
       checkInitialScrollPosition();
-      window.addEventListener('scroll', handleScroll);
+      window.addEventListener("scroll", handleScroll);
 
       return () => {
-        window.removeEventListener('scroll', handleScroll);
+        window.removeEventListener("scroll", handleScroll);
       };
     }
   }, []);
 
   const isMobile = typeof window !== "undefined" && window.innerWidth <= 768;
-  const containerStyle = isClient && (scrolled || typeof window === 'undefined') ? styles.scrolled : '';
+  const containerStyle =
+    isClient && (scrolled || typeof window === "undefined")
+      ? styles.scrolled
+      : "";
 
   return (
     <div className={`${styles.container} ${containerStyle}`}>
       <div className={styles.logos}>
         <button onClick={toggleSidebarcollapse}>
-          <Image src={`${containerStyle ? "assets/hamburger_2.svg" : "assets/hamburger.svg"}`} width={26} height={14} />
+          <Image
+            src={`${
+              containerStyle ? "assets/hamburger_2.svg" : "assets/hamburger.svg"
+            }`}
+            width={26}
+            height={14}
+          />
         </button>
         <Link href="/">
-          <Image src={`${containerStyle ? "assets/logo_2.svg" : "assets/logo.svg"}`} width={197} height={98} />
+          <Image
+            src={`${containerStyle ? "assets/logo_2.svg" : "assets/logo.svg"}`}
+            width={197}
+            height={98}
+          />
         </Link>
       </div>
       <div className={`${styles.links} ${!isCollapsed ? styles.hidden : ""}`}>
         <Links />
       </div>
-      {/* <div className={styles.col_3}> */}
-      {/*   <Link href="https://domicilios.crepesywaffles.com/ingresar/?next=/ingresar/" className={styles.login_btn}> */}
-      {/*     INGRESAR */}
-      {/*   </Link> */}
-      {/*   <Link href="https://domicilios.crepesywaffles.com/" className={`${styles.delivery_btn} ${containerStyle ? styles.delivery_btn_scrolled : ""}`}> */}
-      {/*     DOMICILIO */}
-      {/*   </Link> */}
-      {/* </div> */}
     </div>
-  )
+  );
 }

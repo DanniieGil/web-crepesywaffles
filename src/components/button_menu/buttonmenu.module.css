@@ -51,7 +51,8 @@
 
 @media only screen and (max-width: 800px) {
   .request_here_btn{
-    top: 15vh;
+    bottom: 1rem;
+    right: 1rem;
   }
 }
 
@@ -98,6 +99,12 @@
   gap: 12px;
 }
 
+@media only screen and (max-width: 800px) {
+  .showButtons_container {
+    right: 2.5rem;
+  }
+}
+
 .show_item_1{
   animation: ShowItem1 0.6s ease-in-out;
 }
@@ -126,6 +133,12 @@
   gap: 12px;
   visibility: hidden;
   transition: 0.7s ease;
+}
+
+@media only screen and (max-width: 800px) {
+  .hiddenButtons_container {
+    right: 2.5rem;
+  }
 }
 
 .hidden_item_1{

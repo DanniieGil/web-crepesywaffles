@@ -7,13 +7,20 @@
 }
 
 .container .image_desktop {
-  view-timeline-name: --image;
-  view-timeline-axis: block;
-  animation-timeline: --image;
-  animation-name: show;
-  animation-range: entry 25% cover 35%;
-  animation-fill-mode: both;
+  background-image: url(/assets/img_1_desktop.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: auto 150%;
 }
+
+.container .right_bg {
+  background-position: 150% 100%;
+}
+
+.container .left_bg {
+  background-position: -50% 100%;
+}
+
 
 @keyframes show {
   from {
@@ -38,10 +45,9 @@
 
 @media only screen and (max-width: 800px) {
   .container h1 {
-    font-size : 87px;
-    letter-spacing : -1.74px;
-    margin-left: -6px;
-    margin-bottom: -4px;
+    font-size : 157px;
+    letter-spacing : -3.14px;
+    padding-left: 8px;
   }
 }
 
@@ -116,6 +122,7 @@
   line-height: 24px;
   letter-spacing: 1px;
   animation: MovementDescription 1.5s ease-in-out;
+  margin-top: -15px;
 }
 
 @keyframes MovementDescription {
@@ -131,10 +138,11 @@
 
 @media only screen and (max-width: 800px) {
   .container .h4_simple {
-    font-size : 10px;
-    line-height: 12px;
+    font-size : 18px;
+    line-height: 24px;
     letter-spacing: 0px;
     max-width: 10rem;
+    min-width: 245px;
   }
 }
 
@@ -216,13 +224,15 @@
   height: 768px;
   padding-left: 56px;
   padding-top: 250px;
+  width: 100%;
+  position: relative;
 }
 
 @media only screen and (max-width: 800px) {
   .section_one {
-    height: 223px;
-    margin-left: 20px;
-    padding-top: 30px;
+    height: 100vh;
+    padding-top: 235px;
+    padding-left: 15px;
   }
 }
 
@@ -230,9 +240,10 @@
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   z-index: -1;
-  width: 100%;
 }
 
 .section_three {

@@ -26,7 +26,7 @@ export default function Home() {
           saludablemente complaciendo.
         </h4>
       </div>
-      {/* <ButtonMenu /> */}
+      <ButtonMenu />
       <div className={styles.section_three}>
         <div className={styles.col_1}>
           <h2>NOSOTROS</h2>
@@ -42,15 +42,8 @@ export default function Home() {
             VER MÁS
           </Link>
         </div>
-        <div className={styles.col_2}>
-          <Image
-            src="/assets/img_1_desktop.jpg"
-            width={1112}
-            height={1478}
-            className={styles.image_desktop}
-          />
-          <div className={styles.image_mobile} />
-        </div>
+        <div className={`${styles.image_desktop} ${styles.right_bg}`}></div>
+        <div className={styles.image_mobile} />
       </div>
       <div className={styles.section_four}>
         <div className={styles.col_1}>
@@ -67,12 +60,7 @@ export default function Home() {
           </Link>
         </div>
         <div className={styles.col_2}>
-          <Image
-            src="/assets/img_1_desktop.jpg"
-            width={1112}
-            height={1478}
-            className={styles.image_desktop}
-          />
+          <div className={`${styles.image_desktop} ${styles.left_bg}`}></div>
           <div className={styles.image_mobile} />
         </div>
       </div>
@@ -104,12 +92,7 @@ export default function Home() {
           </Link>
         </div>
         <div className={styles.col_2}>
-          <Image
-            src="/assets/img_1_desktop.jpg"
-            width={1112}
-            height={1478}
-            className={styles.image_desktop}
-          />
+          <div className={`${styles.image_desktop} ${styles.right_bg}`}></div>
           <div className={styles.image_mobile} />
         </div>
       </div>
@@ -127,12 +110,7 @@ export default function Home() {
           </Link>
         </div>
         <div className={styles.col_2}>
-          <Image
-            src="/assets/img_1_desktop.jpg"
-            width={1112}
-            height={1478}
-            className={styles.image_desktop}
-          />
+          <div className={`${styles.image_desktop} ${styles.left_bg}`}></div>
           <div className={styles.image_mobile} />
         </div>
       </div>
