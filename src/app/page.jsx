@@ -26,7 +26,7 @@ export default function Home() {
           saludablemente complaciendo.
         </h4>
       </div>
-      <ButtonMenu />
+      {/* <ButtonMenu /> */}
       <div className={styles.section_three}>
         <div className={styles.col_1}>
           <h2>NOSOTROS</h2>
@@ -101,9 +101,11 @@ export default function Home() {
           <h2>EXPANSIÓN</h2>
           <h3>NOSOTROS EN EL MUNDO</h3>
           <h5>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-            volut
+            Lorem ipsum dolor sit amet, consectetuer adipiscing velit esse
+            molestie consequat, vel illum dolore eu feugiat nulla facilisis at
+            vero eros et accumsan et iusto odio dignissim qui blandit praesent
+            luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+            Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit.
           </h5>
           <Link href="/" className={styles.show_more_btn}>
             VER MÁS
