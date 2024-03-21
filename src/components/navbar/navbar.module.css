@@ -22,7 +22,7 @@
   .container{
     height: 40px;
     z-index: 900;
-    padding: 10px 15px 42px 15px;
+    padding: 33px 15px 52px 24px;
   }
 }
 
@@ -94,14 +94,14 @@
   }
 
   .logos a img{
-    width: 199px;
-    height: 17px;
+    width: 215px;
+    height: 27px;
     transition: 0.5s ease;
     margin-top: 37px;
   }
   .logos button img{
     width: 26px;
-    height: 14px;
+    height: 34px;
     transition: 0.5s ease;
     margin-top: 37px;
   }

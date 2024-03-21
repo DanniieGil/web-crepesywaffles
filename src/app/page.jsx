@@ -1,6 +1,5 @@
 import styles from "./page.module.css";
 import Link from "next/link";
-import Image from "next/image";
 import ButtonMenu from "@/components/button_menu/ButtonMenu";
 
 export const metadata = {
@@ -26,7 +25,7 @@ export default function Home() {
           saludablemente complaciendo.
         </h4>
       </div>
-      {/* <ButtonMenu /> */}
+      <ButtonMenu />
       <div className={styles.section_three}>
         <div className={styles.col_1}>
           <h2>NOSOTROS</h2>
@@ -59,10 +58,8 @@ export default function Home() {
             VER MÁS
           </Link>
         </div>
-        <div className={styles.col_2}>
-          <div className={`${styles.image_desktop} ${styles.left_bg}`}></div>
-          <div className={styles.image_mobile} />
-        </div>
+        <div className={`${styles.image_desktop} ${styles.left_bg}`}></div>
+        <div className={styles.image_mobile} />
       </div>
       <div className={styles.section_five}>
         <h2>IMPACTO</h2>
@@ -91,10 +88,8 @@ export default function Home() {
             VER MÁS
           </Link>
         </div>
-        <div className={styles.col_2}>
-          <div className={`${styles.image_desktop} ${styles.right_bg}`}></div>
-          <div className={styles.image_mobile} />
-        </div>
+        <div className={`${styles.image_desktop} ${styles.right_bg}`}></div>
+        <div className={styles.image_mobile} />
       </div>
       <div className={styles.section_seven}>
         <div className={styles.col_1}>
@@ -111,10 +106,8 @@ export default function Home() {
             VER MÁS
           </Link>
         </div>
-        <div className={styles.col_2}>
-          <div className={`${styles.image_desktop} ${styles.left_bg}`}></div>
-          <div className={styles.image_mobile} />
-        </div>
+        <div className={`${styles.image_desktop} ${styles.left_bg}`}></div>
+        <div className={styles.image_mobile} />
       </div>
     </div>
   );

@@ -4,17 +4,19 @@
   right: 0;
   z-index: 900;
   display: flex;
-  width: 100vw;
-  height: 100vw;
   transition: 0.5s ease-in-out;
 }
 
 .openContainer {
   background-color: rgba(127, 96, 70, 0.5);
-  width: 100vw;
-  height: 100vh;
+  width: 105vw;
+  height: 105vh;
   bottom: 0rem;
   right: 0rem;
+  transition: 0.1s ease-in-out;
+  position: fixed;
+  width: 100vw;
+  height: 100vw;
 }
 
 @media only screen and (max-width: 800px) {
@@ -22,7 +24,7 @@
     display: flex;
     flex-direction: column-reverse;
     gap:10px;
-    transition: 0.5s ease;
+    transition: 0.2s ease;
     animation: UpAndDown 2s ease-in-out, OpacityChange 0.7s ease-in-out;
   }
 }
@@ -31,7 +33,7 @@
   cursor: pointer;
   transition: 0.5s ease-in-out;
   border-radius: 50%;
-  background-color: rgb(240 180 78);
+  background-color: #FFEABC;
   height: 80px;
   width: 80px;
   z-index: 1000;
