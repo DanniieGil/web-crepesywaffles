@@ -1,7 +1,7 @@
 .container {
   color: #7F5540;
+  width: 100vw;
 }
-
 
 .section_one {
   height: 645px;
@@ -38,49 +38,50 @@
 }
 
 .section_two {
-  height: 580px;
+  height: auto;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   background-color: #C6A289;
   color: #F4F0E9;
   text-align: center;
 }
 
 .section_two .line_1 {
-    font-family: "Nitti Grotesk Bold";
-    font-size: 312px;
-    letter-spacing: 56.16px;
-    color: #E5D5CA;
+  font-family: "Nitti Grotesk Bold";
+  font-size: 22vw;
+  letter-spacing: 56.16px;
+  color: #E5D5CA;
 }
 
 .section_two .line_2 {
   font-family : "Nitti Grotesk ExtraBold";
-  font-size : 52px;
+  font-size: 4vw;
   color : #F4F0E9;
   margin-left: -12rem;
+
 }
 
 .section_two .line_3 {
   font-family : Nitti Grotesk;
-  font-size : 97px;
+  font-size : 7.454vw;
   color : #E5D5CA;
   margin-left: 1rem;
 }
 
 .section_two .line_4 {
   font-family : Nitti Grotesk;
-  font-size : 66px;
+  font-size : 5.077vw;
   color : #E5D5CA;
   margin-left: 18rem;
 }
 
 .section_two .line_5 {
   font-family : "Nitti Grotesk ExtraBold";
-  font-size : 46px;
+  font-size: 3.538vw;
   color : #F4F0E9;
   margin-left: -15rem;
   padding-bottom: 20px;
 }
-
-
 
 .section_three, .section_five {
   background-color: #FFF7F0;
@@ -107,7 +108,7 @@
   font-size: 68px;
   letter-spacing: 12.24px;
   animation-name: UpAndDownTitle;
-  animation-range: entry 25% cover 75%;
+  animation-range: entry -119% cover 52%;
 }
 
 .section_three .description,
@@ -224,3 +225,77 @@
   }
 }
 
+
+@media only screen and (max-width: 800px) {
+  .section_one{
+    height: 100vh;
+    padding: 0;
+    padding-left: 25px;
+    display: flex;
+    align-items: center;
+  }
+
+  .section_one h1 {
+    font-size : 80px;
+    letter-spacing : -1.6px;
+  }
+
+  .section_two .line_1 {
+    font-size: 90px;
+    letter-spacing: 20px;
+    animation-range: entry 20% cover 40%;
+  }
+
+  .section_two .line_2 {
+    font-size: 17px;
+    letter-spacing: 0px;
+    margin-left: 0;
+    animation-range: entry 25% cover 30%;
+  }
+
+  .section_two .line_3 {
+    font-size: 32px;
+    letter-spacing: 0px;
+    margin-left: 0;
+    animation-range: entry 25% cover 30%;
+  }
+
+  .section_two .line_4 {
+    font-size: 21px;
+    letter-spacing: 0px;
+    margin-left: 90px;
+    animation-range: entry 25% cover 10%;
+  }
+
+  .section_two .line_5 {
+    font-size: 15px;
+    letter-spacing: 0px;
+    margin-left: -61px;
+    animation-range: entry 50% cover 19%;
+  }
+
+  .section_three,
+  .section_four,
+  .section_five,
+  .section_six {
+    height: 250px;
+  }
+
+  .section_three .title,
+  .section_four .title,
+  .section_five .title,
+  .section_six .title {
+    font-size: 36px;
+    letter-spacing: 12.24px;
+  }
+
+  .section_three .description,
+  .section_four .description,
+  .section_five .description,
+  .section_six .description {
+    font-size : 12px;
+    line-height : 12.88px;
+    width: 263px;
+    margin-top: 20px;
+  }
+}

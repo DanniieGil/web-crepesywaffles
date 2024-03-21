@@ -5,18 +5,18 @@
   z-index: 900;
   display: flex;
   transition: 0.5s ease-in-out;
+  width: fit-content;
+  height: fit-content;
 }
 
 .openContainer {
   background-color: rgba(127, 96, 70, 0.5);
-  width: 105vw;
-  height: 105vh;
   bottom: 0rem;
   right: 0rem;
   transition: 0.1s ease-in-out;
   position: fixed;
-  width: 100vw;
-  height: 100vw;
+  width: 100% !important;
+  height: 100% !important;
 }
 
 @media only screen and (max-width: 800px) {
@@ -26,8 +26,8 @@
     gap:10px;
     transition: 0.2s ease;
     animation: UpAndDown 2s ease-in-out, OpacityChange 0.7s ease-in-out;
-    height: 100%;
-    width: 100%;
+    height: fit-content;
+    width: fit-content;
   }
 }
 
@@ -55,8 +55,8 @@
 
 @media only screen and (max-width: 800px) {
   .request_here_btn{
-    bottom: 2rem;
-    right: 1.5rem;
+    bottom: 2.5rem;
+    right: 2rem;
   }
 }
 
