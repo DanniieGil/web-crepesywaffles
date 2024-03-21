@@ -30,11 +30,14 @@
   fill: #79533F !important;
 
 }
+
 .scrolled {
   background-color: white;
   margin: 0;
   color: #79533F;
   position: sticky;
+  padding: 33px 15px 43px 24px;
+
 }
 
 .scrolled a:hover{
