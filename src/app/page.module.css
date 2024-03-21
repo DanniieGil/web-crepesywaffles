@@ -32,6 +32,8 @@
   .container .left_bg {
     background-position: -27rem 74%;
   }
+
+
 }
 
 @media screen and (min-width: 1600px) and (min-height: 968px) {
@@ -130,6 +132,7 @@
     font-size : 18px;
     letter-spacing : 3.24px;
   }
+
 }
 
 .container h4 {
@@ -254,8 +257,10 @@
 @media only screen and (max-width: 800px) {
   .section_one {
     height: 100vh;
-    padding-top: 235px;
+    padding: 0;
     padding-left: 25px;
+    display: flex;
+    align-items: center;
   }
 }
 

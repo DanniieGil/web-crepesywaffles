@@ -16,14 +16,16 @@ export default function Home() {
           <source src="/assets/home_video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <h1>Hola</h1>
-        <h4 className={styles.h4_simple}>
-          Somos Crepes & Waffles y estamos
-          <br />
-          Naturalmente trabajando, artesanalmente produciendo,
-          <br />
-          saludablemente complaciendo.
-        </h4>
+        <div>
+          <h1>Hola</h1>
+          <h4 className={styles.h4_simple}>
+            Somos Crepes & Waffles y estamos
+            <br />
+            Naturalmente trabajando, artesanalmente produciendo,
+            <br />
+            saludablemente complaciendo.
+          </h4>
+        </div>
       </div>
       <ButtonMenu />
       <div className={styles.section_three}>
