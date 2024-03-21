@@ -26,6 +26,8 @@
     gap:10px;
     transition: 0.2s ease;
     animation: UpAndDown 2s ease-in-out, OpacityChange 0.7s ease-in-out;
+    height: 100%;
+    width: 100%;
   }
 }
 
@@ -53,8 +55,8 @@
 
 @media only screen and (max-width: 800px) {
   .request_here_btn{
-    bottom: 1rem;
-    right: 1rem;
+    bottom: 2rem;
+    right: 1.5rem;
   }
 }
 
@@ -103,7 +105,8 @@
 
 @media only screen and (max-width: 800px) {
   .showButtons_container {
-    right: 2.5rem;
+    right: 2.9rem;
+    bottom: 8rem;
   }
 }
 

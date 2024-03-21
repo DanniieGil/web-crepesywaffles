@@ -3,8 +3,11 @@
   width: 335px;
   background-color: #fff;
   font-family: "Brandon Medium";
-  padding-top: 10px;
+  padding-top: 28px;
   animation: ShowSidebar 1.5s ease-in-out;
+  position: fixed;
+  z-index: 1000;
+  height: 100%;
 }
 
 @keyframes ShowSidebar {
@@ -18,23 +21,38 @@
   }
 }
 
+.line_empty{
+  border-top: 1px solid #D7BCAD;
+  height: 3px;
+  max-width: 97%;
+  padding: 0;
+  margin: 20px 1rem 3rem 1rem;
+}
+
 @media only screen and (max-width: 800px) {
   .sidebar_wrapper{
-    width: 160px;
+    width: 100vw;
+    height: 100%;
     z-index: 900;
+    position: fixed;
+    z-index: 1000;
+    overflow: hidden;
   }
 
   .sidebar_wrapper span {
-    font-size: 8px;
+    font-size: 15px;
   }
 
   .sidebar_wrapper a {
-    font-size: 8px;
+    font-size: 14px;
   }
 
   .sidebar {
-    width: 160px;
+    animation: ShowSidebar 1.5s ease-in-out;
+  }
 
+  .sidebar li {
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -44,23 +62,30 @@
 }
 
 .sidebar {
-  height: 100%;
   background-color: #fff;
-  position: fixed;
   padding: 1rem;
-  margin-top: 60px;
-
+  margin-top: 1rem;
 }
 
 .sidebar_top {
-  padding: 20px 30px 0px 40px;
-  position: fixed;
+  padding: 10px 30px 0px 40px;
+  justify-content: space-between;
+  display: flex;
 }
+
 
 @media only screen and (max-width: 800px) {
   .sidebar_top {
-    padding: 10px 15px 0px 20px;
+    padding: 10px 30px 0px 35px;
     position: fixed;
+    width: 100%;
+
+    transition: 0s ease;
+  }
+
+  .sidebar {
+    width: 100vw;
+    margin-top: 4rem;
   }
 }
 
@@ -88,7 +113,8 @@
 .sidebar_link:hover {
   transition-duration: 0.5s;
   border-radius: 6px;
-  background-color: #f7e9de;
+  background-color: #BEA69D;
+  color: white;
 }
 
 .collapsed {
@@ -104,35 +130,28 @@
 }
 
 .sidebar_delivery_btn {
-  height: 30px;
   display: inline-block;
   border: 2px solid #ccc;
-  border-radius: 5px;
+  border-radius: 6px;
   transition: 0.5s ease-in-out;
-  border: 1px solid #7F5540;
+  border: 1px solid #3C2221;
   color: white;
-  background-color: #79533F;
-  font-size: 13px;
+  background-color: #3C2221;
+  font-size: 12px;
   font-family: "Brandon bold";
   left: 9rem;
-  position: relative;
   text-align: center;
-  line-height: 30px;
-  letter-spacing: 1.2px;
-  padding: 0 10px;
-  top: -4px;
+  letter-spacing : 2px;
+  padding: 0 15px;
 }
 
 .sidebar_delivery_btn:hover{
-  color: #7F5540;
-  border-color:rgb(240 180 78);
-  background-color: rgb(240 180 78);
+  color: #3C2221;
+  border-color:#A28C83;
+  background-color: #A28C83;
 }
 
 @media only screen and (max-width: 800px){
   .sidebar_delivery_btn {
-    height: 25px;
-    left: 2rem;
-    line-height: 24px;
   }
 }
