@@ -1,0 +1,160 @@
+.container{
+  height: 100px;
+  padding-top: 54px;
+  padding-left: 45px;
+  padding-right: 52px;
+  padding-bottom: 54px;
+  font-size: 13px;
+  letter-spacing : 3.6px;
+  font-family: "Brandon Medium";
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  top: 0;
+  z-index: 900;
+  transition: 0.5s ease;
+  position: absolute;
+  width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+  .container{
+    height: 40px;
+    z-index: 900;
+    padding: 33px 15px 52px 24px;
+  }
+}
+
+.container img {
+  fill: #79533F !important;
+
+}
+
+.scrolled {
+  background-color: white;
+  margin: 0;
+  color: #79533F;
+  position: sticky;
+  padding: 33px 15px 43px 24px;
+
+}
+
+.scrolled a:hover{
+  color: #79533F;
+  filter: contrast(300%);
+  transition: 0.2s ease;
+}
+
+.links {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 800px) {
+  .links {
+    display: none;
+  }
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.container .col_3 {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .container .col_3 {
+    gap: 14px;
+  }
+}
+
+
+.container button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.container button:hover {
+  transition-duration: 0.5s;
+  transform: scale(1.1);
+}
+
+.logos {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .logos{
+    gap: 10px;
+  }
+
+  .logos a img{
+    width: 215px;
+    height: 27px;
+    transition: 0.5s ease;
+    margin-top: 37px;
+  }
+  .logos button img{
+    width: 26px;
+    height: 34px;
+    transition: 0.5s ease;
+    margin-top: 37px;
+  }
+}
+
+.logo a:hover {
+  filter: contrast(2);
+  transition: filter 0.5s ease;
+}
+
+.login_btn:hover {
+  transition-duration: 0.5s;
+  filter: contrast(0.3);
+}
+
+@media only screen and (max-width: 800px) {
+  .login_btn {
+    font-size: 7px;
+  }
+}
+
+.delivery_btn {
+  display: inline-block;
+  padding: 7px 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
+@media only screen and (max-width: 800px) {
+  .delivery_btn {
+    padding: 3px 7px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 7px;
+    letter-spacing: 2px;
+  }
+}
+
+.delivery_btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.delivery_btn_scrolled {
+  color: #79533F;
+  border: 2px solid #79533F;
+}
+
+.delivery_btn_scrolled:hover {
+  background-color: #79533F;
+  color: white;
+  transition: 0.5s ease;
+}

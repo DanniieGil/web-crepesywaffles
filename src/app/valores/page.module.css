@@ -1,0 +1,97 @@
+.container {
+  color: #7F5540;
+  background-color: #FFFFFF;
+}
+
+.header {
+  height: 770px;
+  padding-left: 56px;
+  background-image: url("/assets/valores/header_desktop.jpg");
+  align-content: center;
+  background-size: cover;
+  transform: scale(101%);
+}
+
+.header h1 {
+  font-family: "Nitti Grotesk Bold";
+  font-size : 170px;
+  line-height : 136px;
+  letter-spacing : -3.4px;
+  color : #FFF7F0;
+  animation: MovementTitle 1.5s ease-in-out;
+}
+
+@media only screen and (max-width: 800px) {
+  .header {
+    height: 223px;
+    margin-left: 20px;
+    padding-top: 30px;
+  }
+}
+
+.body_container {
+  padding: 140px 126px 90px 96px;
+  gap: 218px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section_one,
+.section_two,
+.section_three,
+.section_four,
+.section_five,
+.section_six {
+  display: flex;
+  gap: 92px;
+  align-items: center;
+}
+
+.section_one, .section_three, .section_five {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.section_one span, .section_three span, .section_five span {
+  font-family: "Nitti Grotesk Bold";
+  font-size: 95px;
+  letter-spacing: 17.1px;
+  color: #7E5540;
+  margin: 0;
+  padding: 0;
+}
+.section_one h3, .section_three h3, .section_five h3 {
+  font-family: "Nitti Grotesk Semilight";
+  font-size: 20px;
+  line-height: 39.08px;
+  color: #7E5540;
+}
+
+.section_two h2, .section_four h2, .section_six h2 {
+  font-family: "Nitti Grotesk Bold";
+  font-size: 80px;
+  letter-spacing: 14.4px;
+}
+.section_two h3, .section_two h3, .section_four h3, .section_six h3 {
+
+  font-family: "Nitti Grotesk Semilight";
+  font-size: 20px;
+  line-height: 39.08px;
+
+}
+
+
+
+/* ANIMATIONS */
+
+@keyframes MovementTitle {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

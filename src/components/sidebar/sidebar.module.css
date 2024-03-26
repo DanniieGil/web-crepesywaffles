@@ -1,0 +1,157 @@
+.sidebar_wrapper {
+  transition: all 0.4s ease-in-out;
+  width: 335px;
+  background-color: #fff;
+  font-family: "Brandon Medium";
+  padding-top: 28px;
+  animation: ShowSidebar 1.5s ease-in-out;
+  position: fixed;
+  z-index: 1000;
+  height: 100%;
+}
+
+@keyframes ShowSidebar {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.line_empty{
+  border-top: 1px solid #D7BCAD;
+  height: 3px;
+  max-width: 97%;
+  padding: 0;
+  margin: 20px 1rem 3rem 1rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .sidebar_wrapper{
+    width: 100vw;
+    height: 100%;
+    z-index: 900;
+    position: fixed;
+    z-index: 1000;
+    overflow: hidden;
+  }
+
+  .sidebar_wrapper span {
+    font-size: 15px;
+  }
+
+  .sidebar_wrapper a {
+    font-size: 14px;
+  }
+
+  .sidebar {
+    animation: ShowSidebar 1.5s ease-in-out;
+  }
+
+  .sidebar li {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.sidebar_wrapper hr {
+  margin-bottom: 20px;
+  margin-top:20px;
+}
+
+.sidebar {
+  background-color: #fff;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.sidebar_top {
+  padding: 10px 30px 0px 40px;
+  justify-content: space-between;
+  display: flex;
+}
+
+
+@media only screen and (max-width: 800px) {
+  .sidebar_top {
+    padding: 10px 30px 0px 35px;
+    position: fixed;
+    width: 100%;
+
+    transition: 0s ease;
+  }
+
+  .sidebar {
+    width: 100vw;
+    margin-top: 4rem;
+  }
+}
+
+.sidebar_link {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  font-size: 13px;
+  height: 32px;
+  margin-bottom: 7px;
+  align-items: center;
+  padding-left: 20px;
+  letter-spacing: 2px;
+  color: #7F6046;
+}
+
+@media only screen and (max-width: 800px) {
+  .sidebar_link {
+    height: 20px;
+    margin-bottom: 0px;
+  }
+}
+
+.sidebar_link:hover {
+  transition-duration: 0.5s;
+  border-radius: 6px;
+  background-color: #BEA69D;
+  color: white;
+}
+
+.collapsed {
+  overflow: hidden;
+  opacity: 0;
+  width: 0px !important;
+}
+
+.sidebar_close_btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.sidebar_delivery_btn {
+  display: inline-block;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  transition: 0.5s ease-in-out;
+  border: 1px solid #3C2221;
+  color: white;
+  background-color: #3C2221;
+  font-size: 12px;
+  font-family: "Brandon bold";
+  left: 9rem;
+  text-align: center;
+  letter-spacing : 2px;
+  padding: 0 15px;
+}
+
+.sidebar_delivery_btn:hover{
+  color: #3C2221;
+  border-color:#A28C83;
+  background-color: #A28C83;
+}
+
+@media only screen and (max-width: 800px){
+  .sidebar_delivery_btn {
+  }
+}

@@ -1,0 +1,272 @@
+.container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 900;
+  display: flex;
+  transition: 0.5s ease-in-out;
+  width: fit-content;
+  height: fit-content;
+}
+
+.openContainer {
+  background-color: rgba(127, 96, 70, 0.5);
+  bottom: 0rem;
+  right: 0rem;
+  transition: 0.1s ease-in-out;
+  position: fixed;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+@media only screen and (max-width: 800px) {
+  .container{
+    display: flex;
+    flex-direction: column-reverse;
+    gap:10px;
+    transition: 0.2s ease;
+    animation: UpAndDown 2s ease-in-out, OpacityChange 0.7s ease-in-out;
+    height: fit-content;
+    width: fit-content;
+  }
+}
+
+.request_here_btn {
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  border-radius: 50%;
+  background-color: #FFEABC;
+  height: 80px;
+  width: 80px;
+  z-index: 1000;
+  animation: UpAndDown 2s ease-in-out, OpacityChange 0.7s ease-in-out;
+  opacity: 2;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.request_here_btn_opened {
+  background-color: rgb(247 233 222);
+}
+
+@media only screen and (max-width: 800px) {
+  .request_here_btn{
+    bottom: 2.5rem;
+    right: 2rem;
+  }
+}
+
+.request_here_btn:hover {
+  transform: scale(1.05);
+}
+
+.request_here_btn_opened:hover {
+  transform: scale(1.05);
+}
+
+.item_circle {
+  background: white;
+  border-radius: 50%;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.item_container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  column-gap: 7px;
+}
+
+.item_container:hover {
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+
+.item_container .item_circle:hover{
+  background-color: rgb(240 180 78);
+}
+
+.showButtons_container {
+  align-self: center;
+  text-align: center;
+  position: fixed;
+  bottom: 7rem;
+  right: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media only screen and (max-width: 800px) {
+  .showButtons_container {
+    right: 2.9rem;
+    bottom: 8rem;
+  }
+}
+
+.show_item_1{
+  animation: ShowItem1 0.6s ease-in-out;
+}
+.show_item_2{
+  animation: ShowItem2 0.6s ease-in-out;
+}
+.show_item_3{
+  animation: ShowItem3 0.7s ease-in-out;
+}
+
+.show_pedir_aqui {
+  animation: ShowPedirAqui 0.4s ease-in-out;
+}
+
+.show_cross{
+  animation: ShowCross 0.6s ease-in-out;
+}
+
+.hiddenButtons_container{
+  text-align: center;
+  position: fixed;
+  bottom: 7rem;
+  right: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  visibility: hidden;
+  transition: 0.7s ease;
+}
+
+@media only screen and (max-width: 800px) {
+  .hiddenButtons_container {
+    right: 2.5rem;
+  }
+}
+
+.hidden_item_1{
+  animation: HiddenItem1 0.7s ease-in-out;
+}
+.hidden_item_2{
+  animation: HiddenItem2 0.7s ease-in-out;
+}
+.hidden_item_3{
+  animation: HiddenItem3 0.8s ease-in-out;
+}
+
+/* ANIMATIONS */
+
+@keyframes UpAndDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes OpacityChange {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes ShowItem1 {
+  from{
+    opacity: 0;
+    transform: translateY(120px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes ShowItem2 {
+  from{
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes ShowItem3 {
+  from{
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes ShowPedirAqui {
+  from{
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes ShowCross {
+  from{
+    opacity: 0;
+    transform: translateY(80px);
+
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes HiddenItem1 {
+  from{
+    opacity: 1;
+    transform: translateY(0px);
+
+  }
+  to {
+    opacity: 0;
+    transform: translateY(120px);
+  }
+}
+
+@keyframes HiddenItem2 {
+  from{
+    opacity: 1;
+    transform: translateY(0px);
+
+  }
+  to {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+}
+
+@keyframes HiddenItem3 {
+  from{
+    opacity: 1;
+    transform: translateY(0px);
+
+  }
+  to {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+}

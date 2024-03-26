@@ -1,0 +1,4 @@
+.item:hover {
+  transition-duration: 0.5s;
+  filter: contrast(0.3);
+}
