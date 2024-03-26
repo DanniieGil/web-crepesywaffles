@@ -4,6 +4,7 @@ import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 import Sidebar from "@/components/sidebar/Sidebar"
 import { SidebarProvider } from "@/context/SidebarContext";
+import ButtonMenu from "@/components/button_menu/ButtonMenu";
 
 export default function RootLayout({ children }) {
   return (
@@ -12,9 +13,10 @@ export default function RootLayout({ children }) {
         <SidebarProvider>
           <Sidebar/>
           <div >
-            <Navbar/>
+            {/* <Navbar/> */}
             {children}
             <Footer/>
+            {/* <ButtonMenu /> */}
           </div>
         </SidebarProvider>
       </body>

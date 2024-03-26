@@ -37,7 +37,6 @@ body {
   color: var(--text);
   font-family: "Brandon Regular";
   display: grid;
-  grid-template-columns: 0fr 1fr;
 }
 
 * {
